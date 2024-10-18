@@ -1,0 +1,28 @@
+Handle Event: 
+    * without para:<button onClick={myFunc}></button>
+    *: With para: need to declear a arrow function in onClick. for example: <button onClick ={()=>{myFunc(23)}}>My btn</button>
+    *: Direct function can be pass. 
+
+
+1. You can handle events by passing a function as a prop to an element like <button>.
+
+2. Event handlers must be pased, not called! onClick = {handleClick}, not onClick={handleClick()}.
+
+3. You can define an event handler function sparately or inline.
+
+4. Event handlers are defined inside a component, so they can acces props.
+
+5. You can declear an event handler in a parent and pass it as prop to child.
+
+6. You can define your own event handler props with wpllication-specific names.
+
+7. Explicity calling an event handler prop from a child handler is a good alternative to progagation. 
+
+
+5 use cases of useState()
+
+1. State Managment
+2. Conditional rendering
+3. Toggle flags(tru/false)
+4. Counter
+5. Store Api data in state
